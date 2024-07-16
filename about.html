@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>about.salma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Sofia&display=swap" rel="stylesheet">
+
+</head>
+<style>
+   
+    body {
+        background-color: rgb(33, 33, 33); 
+        font-family: "Sofia", cursive; 
+        box-sizing: border-box; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbarline {
+        font-size: 20px;
+        font-weight:bold;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        background-color: #585858;
+        width: 100%;
+    }
+    .navbarline a {
+        color: white;
+        margin-left: 10px;
+        transition: ease 0.5s;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .navbarline a.active,
+    .navbarline a:hover {
+        color: rgb(216, 40, 255);
+        visibility: visible;
+        transform: scale(1.2);
+        transition: transform 0.3s ease-in-out;
+    }
+    footer{
+        background-color: #585858;
+        border-radius: 10px;
+        margin-top: 100px;
+        width: 100%;
+        color: white;
+        position: relative;
+        padding: 10px;
+        font-size: 17px;
+        text-align: center;
+    }
+    .isi{
+        margin-top:70px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .navbarline{
+        animation: animasi ease 0.5s;
+    }
+    .isi{
+        animation: animasi ease 0.5s;
+    }
+    footer{
+        animation: animasi ease 0.5s;
+    }
+    @keyframes animasi{
+        0%{
+            opacity: 0;
+            transform: scale(0);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
+<body>
+    <div class="navbarline">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+    </div>
+    <div class="isi">
+        <h1>Hukum Pidana</h1>
+        <p>Hukum Pidana atau Hukum Kriminal (Belanda: Strafrecht) adalah keseluruhan dari peraturan-peraturan yang menentukan perbuatan apa yang dilarang dan terlarang termasuk ke dalam tindak pidana, serta menentukan hukuman apa yang dapat dijatuhkan terhadap yang melakukannya.</p>
+
+Dengan demikian hukum pidana bukanlah mengadakan norma hukum sendiri, melainkan sudah terletak pada norma lain dan sanksi pidana. Diadakan untuk menguatkan ditaatinya norma-norma lain tersebut, misalnya norma agama dan kesusilaan.</p>
+
+Dalam hukum pidana materil dikenal yang namanya tindak pidana. Adapun yang dimaksud dengan tindak pidana adalah suatu tindakan melawan hukum yang dilakukan oleh seseorang yang dapat dipertanggungjawabkan dan atas perbuatannya tersebut diancam dengan sanksi tertentu. </p>Tindak pidana dibagi menjadi 2, yaitu: tindak pidana materil (delik materil) dan tindak pidana formil (delik formil). Yang dimaksud dengan delik materil adalah delik yang hanya menyebutkan akibat yang terjadi, misalnya di dalam Pasal 338 KUHP (pembunuhan biasa (doodslag)) yang menyebutkan hilangnya nyawa orang lain (akibat).</p> Yang dimaksud dengan delik formil adalah delik yang menyebutkan cara-cara tindak pidana dilakukan, misalnya di dalam Pasal 362 KUHP (pencurian) yang menyebutkan cara-cara mencuri yaitu dengan cara diam-diam mengambil barang orang lain yang sebagian atau seluruhnya milik orang lain (cara mencuri).
+    </div>
+    <footer>
+        <p align="center">Copyright &copy; 2024 By Shalma Firosita</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentLocation = location.href;
+            const menuItem = document.querySelectorAll('.navbarline a');
+            const menuLength = menuItem.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].className += " active";
+                }
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>
